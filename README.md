@@ -3,7 +3,7 @@
 This repository contains the R code used for the agent-based modelling (ABM) simulation developed for the research project "*Usage Practices and Trust in Artificial Intelligence: An Analytical Sociology Approach*". The code integrates empirical survey data with a mechanism-based simulation framework grounded in Hedström's DBO theory of action.
 
 
-The preprint accompanying this code is available on [ResearchGate](https://www.researchgate.net/publication/404191635_Usage_Practices_and_Trust_in_Artificial_Intelligence_an_Analytical_Sociology_Approach).
+The preprint accompanying this code is available on [ResearchGate](https://www.researchgate.net/publication/404197729_Usage_Practices_and_Trust_in_Artificial_Intelligence_an_Analytical_Sociology_Approach).
 If you use this code, please cite the paper.
 
 ## Research Aim
