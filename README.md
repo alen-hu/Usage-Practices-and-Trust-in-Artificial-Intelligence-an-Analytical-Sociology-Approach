@@ -34,7 +34,7 @@ The research combines survey research with agent-based modelling (ABM) within th
 
 ## Description of the R Scripts
 
-The repository contains six R scripts that jointly implement the simulation. They are numbered according to the order in which they should be sourced.
+The repository contains five R scripts that jointly implement the simulation. They are numbered according to the order in which they should be sourced.
 
 - `0_functions_for_ABM_simulation.R`. Contains all helper functions used throughout the simulation. This includes functions for calculating individual social thresholds, social pressure, adoption probability (logistic function combining DBO components and social pressure), the expectation-correction mechanism, experience classification (positive, neutral, negative), changes in trust, and the trust–beliefs feedback loop. Centralising these functions keeps the main simulation loop clean and allows the mechanisms to be modified or extended independently.
 
@@ -45,8 +45,6 @@ The repository contains six R scripts that jointly implement the simulation. The
 - `3_trust_feedback.R`. Handles the dynamics of trust within the simulation. For each user at each timestep, the script calculates the baseline experience factor (combining usage quality and intensity), applies the expectation correction, classifies the experience type, and updates the agent's trust accordingly. It also implements the feedback mechanism through which changes in trust gradually influence agents' beliefs about AI, capturing the broader assumption that usage experiences shape perceptions of the technology's usefulness and reliability.
 
 - `4_main_simulation_loop.R`. The main execution script that runs the ABM over 100 timesteps. At each timestep, it updates social pressures, runs the adoption decision for non-users, updates trust and beliefs for users, and records the state of the simulation (number of users, average trust, individual trajectories). The output of this script provides the data used for the subsequent analysis of diffusion dynamics and trust development.
-
-- `5_hypothesis_testing.R`. Contains the statistical analyses used to test the research hypotheses on the simulation outputs. This includes logistic regression models for the adoption decision (testing the imitation and normative pressure mechanisms), regression models explaining change in trust as a function of usage quality, longitudinal mixed-effects models, and group-based comparisons (users vs. non-users; low-, medium-, and high-quality users). The script also generates the figures and descriptive statistics reported in the paper.
 
 ## Final Notes and Licence
 
